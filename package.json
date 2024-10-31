@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev:frontend": "cd packages/frontend && npm run dev",
+    "dev:backend": "cd packages/backend && npm run dev",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "prettier": "^3.3.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

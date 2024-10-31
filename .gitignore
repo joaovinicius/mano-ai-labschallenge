@@ -1,0 +1,13 @@
+# deps
+node_modules
+
+# build
+dist
+*.local
+
+# env
+.env
+.env.production
+
+# misc
+.DS_Store
