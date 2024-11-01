@@ -1,6 +1,6 @@
 import type { CsvClaimType } from "lib/types/claims";
 import { ClaimLocalFilesRepository } from "~/repositories/ClaimLocalFilesRepository";
-import { DataMapperFromCsvClaimToJsonClaim } from "~/adapters/DataMapperFromCsvClaimToJsonClaim";
+import { DataMapperFromCsvClaimToJsonClaim } from "~/data-mappers/DataMapperFromCsvClaimToJsonClaim";
 
 const respository = new ClaimLocalFilesRepository();
 

@@ -1,5 +1,5 @@
 import type { CsvClaimType, JsonClaimType } from "lib/types/claims";
-import { FromCsvClaimToJsonClaim } from "./DataMappers";
+import { FromCsvClaimToJsonClaim } from "./DataMapper";
 
 export class DataMapperFromCsvClaimToJsonClaim extends FromCsvClaimToJsonClaim {
   public static convert(data: CsvClaimType): JsonClaimType {
