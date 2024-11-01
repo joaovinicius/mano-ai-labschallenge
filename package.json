@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev:frontend": "cd packages/frontend && npm run dev",
-    "dev:backend": "cd packages/backend && npm run dev",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
     "format": "prettier . --write"
   },
   "dependencies": {
