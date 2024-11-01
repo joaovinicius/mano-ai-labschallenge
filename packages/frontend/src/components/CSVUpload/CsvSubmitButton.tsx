@@ -5,7 +5,7 @@ import { postCsvClaims } from "~/services/csvClaimsService";
 import { notifications } from "@mantine/notifications";
 import { Loader } from "@mantine/core";
 
-const CsvSubmitButton = () => {
+const CsvSubmitButton = ({ onSuccess }: { onSuccess: () => void}) => {
   function handleSubmit() {
     if (!store.allSelectedAreValid) {
       notifications.show({
@@ -25,6 +25,7 @@ const CsvSubmitButton = () => {
           color: "green",
         });
         store.clear();
+        onSuccess()
       })
       .catch((e) => {
         notifications.show({

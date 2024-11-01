@@ -28,7 +28,9 @@ function CsvModal() {
         <Modal.Content>
           <Modal.Header>
             <Modal.Title>
-              <CsvSubmitButton />
+              <CsvSubmitButton onSuccess={() => {
+                close();
+              }} />
               <span className="mx-4">Selected rows ({store.selected.length})</span>
               {store.selected.length > 0 && !store.allSelectedAreValid && <span className="text-xs text-red-700">Sorry, some rows are invalid</span>}
             </Modal.Title>
